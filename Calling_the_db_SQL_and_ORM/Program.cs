@@ -7,7 +7,10 @@ namespace Calling_the_db_SQL_and_ORM
     {
         static void Main(string[] args)
         {
-            using(NorthContext context = new NorthContext())
+            // Namn: Maria Vestlund
+            // Klass: NET23
+
+            using (NorthContext context = new NorthContext())
             {
                 var customers = context.Customers //Skapar en lista med företagskunder
                                 .OrderBy(c => c.CompanyName)
